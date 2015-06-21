@@ -22,8 +22,4 @@ shinyServer(function(input, output) {
     summary(model)
   })
   
-#   # Show the first "n" observations
-#   output$view <- renderTable({
-#     head(datasetInput(), n = input$obs)
-#  })
 })
