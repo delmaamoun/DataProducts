@@ -9,6 +9,10 @@ shinyUI(pageWithSidebar(
   # Sidebar with controls to select a dataset and specify the number
   # of observations to view
   sidebarPanel(
+    h3('Documentation'),
+    h4('The point of this app is to select one of the predictors from the mtcars dataset,
+       and it will generate the linear regression model using this predictor.
+       All (obviously) selects all predictors'),
     selectInput("predictor", "Choose a predictor:", 
                 choices = c("All", "cyl", "hp","disp","wt"))
     
